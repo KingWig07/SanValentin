@@ -8,8 +8,6 @@ body, html {
     scroll-behavior: smooth;
     color: white;
     height: 100vh;
-    overflow-x: hidden; /* Evita el scroll horizontal */
-    width: 100%; /* Asegura que el ancho no exceda el 100% */
 }
 
 /* Sección general */
@@ -22,8 +20,6 @@ section {
     padding: 50px 20px;
     text-align: center;
     background: rgba(0, 0, 0, 0.3);
-    width: 100%; /* Asegura que las secciones no excedan el ancho de la pantalla */
-    box-sizing: border-box; /* Incluye el padding en el ancho total */
 }
 
 /* Estilo general para los títulos */
@@ -68,7 +64,6 @@ section h2 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    max-width: 100%; /* Asegura que las tarjetas no excedan el ancho de la pantalla */
 }
 
 .tarjeta:hover {
@@ -100,16 +95,14 @@ section h2 {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    gap: 20px; /* Reduce el espacio entre elementos */
-    padding: 0 10px; /* Añade un poco de padding para evitar que los elementos toquen los bordes */
+    gap: 100px;
 }
 
 .evento-contador {
     background: rgba(255, 255, 255, 0.15);
     padding: 20px;
     border-radius: 15px;
-    width: 100%; /* Asegura que los contadores no excedan el ancho de la pantalla */
-    max-width: 300px; /* Limita el ancho máximo */
+    width: 400px;
     transition: transform 0.3s ease;
 }
 
@@ -195,7 +188,7 @@ section h2 {
 }
 
 .gif-popup {
-    max-width: 100%; /* Asegura que el GIF no exceda el ancho de la pantalla */
+    max-width: 100%;
     height: auto;
     border-radius: 10px;
 }
