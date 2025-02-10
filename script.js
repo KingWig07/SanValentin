@@ -16,7 +16,7 @@ window.onload = escribirMensaje;
 const eventos = {
     cine: {
         titulo: "Noche de Cine",
-        texto: "Una historia de amor que comienza en un cuaderno y atraviesa el tiempo."
+        texto: "No hay spoilers jajaja."
     },
     picnic: {
         titulo: "Concierto Acústico & Picnic",
