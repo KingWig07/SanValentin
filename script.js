@@ -13,19 +13,18 @@ function escribirMensaje() {
 
 window.onload = escribirMensaje;
 
-// Datos de los eventos
 const eventos = {
     cine: {
         titulo: "Noche de Cine",
-        texto: "Película sorpresa en casa con palomitas y frazadas. ¡Prepárate para una noche acogedora!"
+        texto: "Una historia de amor que comienza en un cuaderno y atraviesa el tiempo."
     },
     picnic: {
         titulo: "Concierto Acústico & Picnic",
-        texto: "Disfrutaremos música en vivo mientras compartimos un picnic con café y postres deliciosos."
+        texto: "Melodías que nos transportarán a mundos mágicos, en un teatro cerca de un parque emblematico."
     },
     cumple: {
         titulo: "Nuestro Cumple Mes",
-        texto: "Celebración especial con una cena sorpresa y un pequeño regalo. ¡No te lo pierdas!"
+        texto: "Un lugar donde el mar nos abraza y el sol nos ilumina."
     }
 };
 
@@ -78,14 +77,26 @@ iniciarContador('contador-cine', fechaCine);
 iniciarContador('contador-picnic', fechaPicnic);
 iniciarContador('contador-cumple', fechaCumple);
 
+// Función para mostrar detalles en el modal
+function mostrarDetalle(evento) {
+    document.getElementById("detalle-titulo").innerText = eventos[evento].titulo;
+    document.getElementById("detalle-texto").innerText = eventos[evento].texto;
+    document.getElementById("detalle-modal").style.display = "flex";
+}
+
+// Cerrar modal de detalles
+function cerrarModalDetalle() {
+    document.getElementById("detalle-modal").style.display = "none";
+}
+
 // Mostrar el popup con el GIF
 function mostrarPopup() {
     const popup = document.getElementById('popup-gif');
     popup.style.display = 'flex';  // Mostrar el popup
 }
 
-// Cerrar el popup
-function cerrarModal() {
+// Cerrar el popup del GIF
+function cerrarModalGif() {
     const popup = document.getElementById('popup-gif');
     popup.style.display = 'none';  // Ocultar el popup
 }

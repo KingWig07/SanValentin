@@ -48,7 +48,7 @@
                         <h3>12 FEB - Noche de Película</h3>
                         <p>Disfrutemos una película sorpresa en el cine.</p>
                     </div>
-                    <button class="detalle-btn mt-auto" onclick="mostrarDetalle('cine')">Ver detalles</button>
+                    <button class="detalle-btn mt-auto" onclick="mostrarDetalle('cine')">Ver spoilers</button>
                 </div>
             </div>
             <!-- Evento 2 -->
@@ -58,7 +58,7 @@
                         <h3>14 FEB - Concierto & Picnic</h3>
                         <p>Una tarde mágica con música en vivo, picnic y postres.</p>
                     </div>
-                    <button class="detalle-btn mt-auto" onclick="mostrarDetalle('picnic')">Ver detalles</button>
+                    <button class="detalle-btn mt-auto" onclick="mostrarDetalle('picnic')">Ver spoilers</button>
                 </div>
             </div>
             <!-- Evento 3 -->
@@ -66,9 +66,9 @@
                 <div class="tarjeta d-flex flex-column h-100">
                     <div class="contenido flex-grow-1">
                         <h3>16 FEB - ¡Nuestro Cumple Mes!</h3>
-                        <p>Celebramos un mes más juntos con una salida a la playa.</p>
+                        <p>Celebramos un mes más juntos con una salida especial.</p>
                     </div>
-                    <button class="detalle-btn mt-auto" onclick="mostrarDetalle('cumple')">Ver detalles</button>
+                    <button class="detalle-btn mt-auto" onclick="mostrarDetalle('cumple')">Ver spoilers</button>
                 </div>
             </div>
         </div>
@@ -120,21 +120,21 @@
         </div>
     </section>
 
-    <!-- Modal con el GIF y mensaje -->
-    <div id="popup-gif" class="popup-modal">
-        <div class="popup-contenido">
-            <span class="cerrar" onclick="cerrarModal()">&times;</span>
-            <h3 style="color: black;">¡Gracias por Confirmar tu Asistencia!</h3>
-            <img src="assets/images/giphy.gif" alt="GIF de corazones" class="gif-popup">
-        </div>
-    </div>
-
     <!-- Modal para Detalles -->
     <div id="detalle-modal" class="modal">
         <div class="modal-contenido">
-            <span class="cerrar" onclick="cerrarModalGif()">&times;</span>
+            <span class="cerrar" onclick="cerrarModalDetalle()">&times;</span>
             <h2 id="detalle-titulo"></h2>
             <p id="detalle-texto"></p>
+        </div>
+    </div>
+
+    <!-- Modal con el GIF y mensaje -->
+    <div id="popup-gif" class="popup-modal">
+        <div class="popup-contenido">
+            <span class="cerrar" onclick="cerrarModalGif()">&times;</span>
+            <h3 style="color: black;">¡Gracias por Confirmar tu Asistencia!</h3>
+            <img src="assets/images/giphy.gif" alt="GIF de corazones" class="gif-popup">
         </div>
     </div>
 
