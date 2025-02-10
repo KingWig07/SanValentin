@@ -217,12 +217,12 @@ section h2 {
     }
 
     section h2 {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         margin-bottom: 20px;
     }
 
     #mensajePrincipal {
-        font-size: 1.8rem;
+        font-size: 2.5rem;
         padding: 0 10px;
     }
 
@@ -259,24 +259,24 @@ section h2 {
 /* Responsividad para teléfonos pequeños */
 @media (max-width: 480px) {
     section h2 {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     #mensajePrincipal {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
 
     .detalle-btn {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
         padding: 6px 10px;
     }
 
     .contador {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
 
     #confirmar-btn {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         padding: 10px 20px;
     }
 }
