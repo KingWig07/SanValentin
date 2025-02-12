@@ -68,7 +68,7 @@ function iniciarContador(idElemento, fechaObjetivo) {
 }
 
 // Fechas de los eventos (modifica según necesites)
-const fechaCine = new Date('2025-02-12T20:30:00').getTime();
+const fechaCine = new Date('2025-02-12T19:30:00').getTime();
 const fechaPicnic = new Date('2025-02-14T16:00:00').getTime();
 const fechaCumple = new Date('2025-02-16T00:00:00').getTime();
 
